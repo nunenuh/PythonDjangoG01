@@ -1,1 +1,5 @@
 django
+django-extensions
+ipython
+jupyter
+pillow
