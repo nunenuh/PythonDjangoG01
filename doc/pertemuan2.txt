@@ -1,0 +1,16 @@
+#install kebutuhan 
+pip install django-extensions
+pip install ipython
+pip install jupyter
+
+# tambahkan di setting.py pada baris terakhir
+REQUIRED_APPS = [
+	.....,
+	'django_extensions',
+]
+
+
+
+# untuk menjalankan django shell
+# menggunkan jupyter notebook
+python manage.py shell_plus --notebook
