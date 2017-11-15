@@ -1,0 +1,23 @@
+{
+  "name": "ITEC Course Django",
+  "homepage": "https://github.com/nunenuh/PythonDjangoG01",
+  "authors": [
+    "Lalu Erfandi Maula Yusnu <nunenuh@gmail.com>"
+  ],
+  "description": "Materi pengajaran python django angkatan pertama",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "admin-lte": "adminlte#^2.4.2"
+  }
+}

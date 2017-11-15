@@ -1,21 +1,37 @@
-<h1>Hai ini template</h1>
+{% extends 'layout/index.html' %}
 
-{{kata}} <br/>
-{{ar}} <br>
+{% block content %}
+<div class="content-wrapper">
 
-formatnyta url 'namespace:name'  <br>
-{% url 'member:test' %} <br>    
-<a href="{% url 'member:test' %}">Link</a>
+    <section class="content-header">
+        asddad
+    </section>
+    <section class="content">
+            <h1>Hai ini template</h1>
+            
+            {{kata}} <br/>
+            {{ar}} <br>
+            
+            formatnyta url 'namespace:name'  <br>
+            {% url 'member:test' %} <br>    
+            <a href="{% url 'member:test' %}">Link</a>
+            
+            {% if logika == True %}
+                <b>Logika Anda benar</b>
+            {% else %}
+                <b>Logika Anda Salah</b>
+            {% endif %}
+            <br>
+            
+            {% for a in ar %}
+            
+            {{a}} <br>
+            
+            {% endfor %}
 
-{% if logika == True %}
-    <b>Logika Anda benar</b>
-{% else %}
-    <b>Logika Anda Salah</b>
-{% endif %}
-<br>
+    </section>
+        
 
-{% for a in ar %}
 
-{{a}} <br>
-
-{% endfor %}
+</div>
+{% endblock %}
