@@ -1,12 +1,81 @@
-{% extends 'layout/index.html' %}
+{% extends 'layout/dashboard/index.html' %}
 
 {% block content %}
 <div class="content-wrapper">
 
     <section class="content-header">
-        asddad
-    </section>
+        <h1>
+          Member
+          <small>Template</small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> Member</a></li>
+          <li class="active">Template</li>
+        </ol>
+      </section>
     <section class="content">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="info-box">
+                    <span class="info-box-icon bg-blue"><i class="fa fa-power-off"></i></span>
+        
+                    <div class="info-box-content">
+                        <span class="info-box-text">Likes</span>
+                        <span class="info-box-number">41,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+            </div>
+        </div>
+
+
+        <div class="box">
+                <div class="box-header">
+                  <h3 class="box-title">Data Table With Full Features</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                  <table class="table table-bordered tabel_ff" id="tabel_fandi">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Alamat</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Fandi</td>
+                                <td>Mataram</td>
+                                
+                            </tr>
+                        </tbody>
+                    </thead>
+
+                  </table>
+                </div>
+                <!-- /.box-body -->
+              </div>
+
+
+    <div class="box box-success ">
+        <div class="box-header with-border">
+            <h3 class="box-title">Removable</h3>
+
+            <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+            <!-- /.box-tools -->
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            The body of the box
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+            
             <h1>Hai ini template</h1>
             
             {{kata}} <br/>
@@ -34,4 +103,10 @@
 
 
 </div>
+<script>
+        $(function () {
+
+          $('.tabel_ff').DataTable()
+        })
+      </script>
 {% endblock %}

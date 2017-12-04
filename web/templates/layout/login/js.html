@@ -21,6 +21,7 @@
 
 <!-- DataTables -->
 <script src="{%  static 'components/datatables.net/js/jquery.dataTables.js' %}"></script>
+<script src="{%  static 'components/datatables.net-bs/js/dataTables.bootstrap.js' %}"></script>
 
 
 
@@ -30,11 +31,11 @@
 <script src="{%  static 'components/admin-lte/dist/js/demo.js' %}"></script>
 
 <script>
-$(function () {
-  $('input'.iCheck({
-    checkboxClass: 'icheckbox_square-blue',
-    radioClass: 'iradio_square-blue',
-    increaseArea: '20%' // optional
-  });
-});
+  $(function () {
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass   : 'iradio_minimal-blue',
+      increaseArea : '20%' //optional
+    })
+  })
 </script>
