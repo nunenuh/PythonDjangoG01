@@ -8,14 +8,16 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    '10.10.1.117',
-    'faris.itec.loc',
+    '10.10.1.117', 
+    '10.10.1.179',
+    'nunenuh.loc',
 ]
 
 PROJECT_APPS = [
     'member',
     'orm',
     'login',
+    'provinsi',
 ]
 
 REQUIRED_APPS = [
@@ -26,6 +28,7 @@ REQUIRED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^member/', include('member.urls', namespace='member')),
+    url(r'^provinsi/', include('provinsi.urls', namespace='provinsi')),
     url(r'^', include('login.urls', namespace='login')),
 ]
 
